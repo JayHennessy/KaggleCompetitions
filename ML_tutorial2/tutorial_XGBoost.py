@@ -13,7 +13,7 @@ from sklearn.metrics import mean_absolute_error
 from xgboost import XGBRegressor
 
 
-data = pd.read_csv('../input/house-prices-advanced-regression-techniques/train.csv')
+data = pd.read_csv('C:/Users/JAY/Desktop/Machine_Learning_Course/KaggleCompetions/ML_tutorial1/data/melb_data.csv')
 data.dropna(axis=0, subset=['SalePrice'], inplace=True)
 y = data.SalePrice
 X = data.drop(['SalePrice'], axis=1).select_dtypes(exclude=['object'])
